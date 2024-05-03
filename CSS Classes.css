@@ -71,3 +71,26 @@ background: #147bd1;
   6.3px 6.3px 30.5px rgba(0, 0, 0, 0.029),
   15px 15px 73px rgba(0, 0, 0, 0.04);
 }
+
+/* Pulsing Button */
+.pulseButton {
+    transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
